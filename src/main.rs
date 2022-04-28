@@ -1,4 +1,4 @@
-mod mutils;
+mod Mutils;
 
 use std::io;
 
@@ -11,7 +11,7 @@ fn main() {
     let amountOfNums = parse_to_int32(trimmed_user_input);
 
     //Generate amount of random numbers
-    let nums = mutils::gen_random_numbers(amountOfNums);
+    let nums = Mutils::gen_random_numbers(amountOfNums);
 
 }
 

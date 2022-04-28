@@ -3,7 +3,7 @@ use rand::prelude::*;
 //Generate the amount of random numbers
 pub fn gen_random_numbers(amount: i32) -> Vec<i32>{
 
-    //Create instance of random number generator
+    //Create instance of random number generator using rand crate
     let mut rng = rand::thread_rng();
 
     //declare a vector to store 32 bit integers
