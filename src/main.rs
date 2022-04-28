@@ -1,4 +1,5 @@
 mod Mutils;
+mod SAlgo;
 
 use std::io;
 
