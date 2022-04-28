@@ -1,12 +1,17 @@
+mod mutils;
+
 use std::io;
 
 fn main() {
-    println!("Please enter an amount of integers to generate:");
+    println!("Please enter an amount of integers to generate (amount must be greater than 0):");
 
     //Read user input, trim and then parse to a number
     let user_input = read_input();
     let trimmed_user_input = trim_input(user_input);
     let amountOfNums = parse_to_int32(trimmed_user_input);
+
+    //Generate amount of random numbers
+    let nums = mutils::gen_random_numbers(amountOfNums);
 
 }
 
