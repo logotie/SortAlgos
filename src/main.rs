@@ -15,7 +15,8 @@ fn main() {
     let nums = Mutils::gen_random_numbers(amountOfNums);
 
     //sort using bubbleswap
-    let sortedNum = SAlgo::bubble_swap(nums);
+    let sortedNumBubbleSwap = SAlgo::bubble_swap(&nums);
+    let sortedNumInsertionSort = SAlgo::insertion_sort(&nums);
 
 }
 
