@@ -14,6 +14,9 @@ fn main() {
     //Generate amount of random numbers
     let nums = Mutils::gen_random_numbers(amountOfNums);
 
+    //sort using bubbleswap
+    let sortedNum = SAlgo::bubble_swap(nums);
+
 }
 
 //Reads and takes in user input

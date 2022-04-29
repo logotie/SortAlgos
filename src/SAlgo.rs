@@ -18,3 +18,20 @@ pub fn bubble_swap(mut nums: Vec<i32>) -> Vec<i32>{
 
     nums
 }
+
+pub fn insertion_sort(mut nums: Vec<i32>) -> Vec<i32>{
+
+    for i in 1..nums.len(){
+        let curr = nums[i];
+        let mut j = i - 1;
+
+        while (curr < nums[j] && j >= 0) {
+            nums[j+1] = nums[j];
+            j = j-1;
+        }
+
+        nums[j+1] = curr;
+    }
+
+    nums
+}
